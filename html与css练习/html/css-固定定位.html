@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>固定练习</title>
+    <style>
+        .bx {
+            margin: auto;
+            position: relative;
+            width: 800px;
+            height: 1000px;
+            background-color: pink;
+        }
+        
+        .left {
+            position: fixed;
+            top: 50px;
+            left: 0px;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+        
+        .right {
+            position: fixed;
+            top: 50px;
+            right: 0px;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+        
+        .bx-right {
+            position: fixed;
+            top: 90%;
+            left: 50%;
+            margin-left: 405px;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+        
+        .pre,
+        .next {
+            height: 40px;
+            width: 30px;
+            line-height: 40px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, .3);
+        }
+        
+        .pre {
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            border-radius: 0px 30px 30px 0px;
+        }
+        
+        .next {
+            position: absolute;
+            top: 100px;
+            right: 0px;
+            border-radius: 30px 0px 0px 30px;
+        }
+        
+        .xyd {
+            position: absolute;
+            top: 270px;
+            left: 45%;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, .3);
+            width: 120px;
+        }
+        
+        ul li {
+            position: relative;
+            top: -7px;
+            left: -20px;
+            float: left;
+            margin: 0px 6px;
+            list-style: none;
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+        
+        .xz {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="left">左</div>
+        <div class="bx">
+            <img src="../imgs/Snipaste_2022-06-07_15-22-21.png" alt="" width="100%" height="300px">
+            <div class="pre">&gt;</div>
+            <div class="next">&lt;</div>
+            <div class="xyd">
+                <ul>
+                    <li class="xz"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bx-right">版心右侧</div>
+        <div class="right">右</div>
+    </div>
+</body>
+
+</html>

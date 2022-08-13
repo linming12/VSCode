@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #999;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.bx {
+    max-width: 640px;
+    min-width: 320px;
+    margin: auto;
+}
+
+
+/* 清除浮动 */
+
+.clearfix::after {
+    display: block;
+    content: "";
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

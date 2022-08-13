@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画练习</title>
+    <style>
+        /* 定义动画 */
+        
+        @keyframes move {
+            from {
+                transform: translateX(100px);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            to {
+                transform: translateY(1000px);
+            }
+        }
+        
+        .demo {
+            transform: r;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 执行的动画名称 */
+            /* animation-name: move; */
+            /* 执行时间 */
+            /* animation-duration: 1s; */
+            /* 无限循环 */
+            /* animation-iteration-count: infinite; */
+            /* 走完之后再反向走位 */
+            /* animation-direction: alternate; */
+            /* 停留在结束位置 */
+            /* animation-fill-mode: forwards; */
+            /* 复合写法 */
+            /* animation: move 1s infinite alternate forwards; */
+        }
+        
+        .demo:hover {
+            /* 停止动画 */
+            animation-play-state: paused;
+        }
+        /* 小圆点波纹 */
+        
+        @keyframes anli {
+            from {
+                width: 0px;
+                height: 0px;
+                opacity: 1;
+            }
+            to {
+                width: 64px;
+                height: 64px;
+                opacity: 0;
+            }
+        }
+        
+        .anli {
+            border: 1px solid #009dfa;
+            position: relative;
+            right: 0px;
+            top: 0px;
+        }
+        
+        .anli div {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            box-shadow: 0px 0px 12px #009dfa;
+        }
+        
+        .anli div:nth-child(n+2) {
+            box-shadow: 0px 0px 5px #009dfa;
+            animation: anli 1.9s infinite linear;
+        }
+        
+        body .anli .one {
+            animation-delay: .5s;
+        }
+        
+        body .anli .two {
+            animation-delay: .9s;
+        }
+        
+        body .anli .three {
+            animation-delay: .13s;
+        }
+        
+        .anli .dian {
+            background-color: #009dfa;
+        }
+        /* 奔跑的小熊 */
+        
+        @keyframes bear {
+            0% {}
+            100% {
+                background-position: -1600px 0px;
+            }
+        }
+        
+        @keyframes bear_move {
+            0% {}
+            100% {
+                top: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        
+        .box_bear {
+            height: 100px;
+            position: relative;
+            margin: 100px auto;
+            background-color: pink;
+        }
+        
+        .bear {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 200px;
+            height: 100px;
+            background: url(../imgs/bear.png) no-repeat 0px 0px;
+            animation: bear_move 1s linear forwards, bear .3s steps(8) infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo"></div>
+    <!-- 小圆点波纹 -->
+    <div class="anli">
+        <div class="dian"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    <!-- 奔跑的小熊 -->
+    <div class="box_bear">
+        <div class="bear"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>进度条</title>
+    <style>
+        * {
+            /* margin: 0%;
+            padding: 0%; */
+            box-sizing: border-box;
+        }
+        
+        .bar {
+            width: 200px;
+            height: 10px;
+            padding: 0px .5px;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+        
+        .barin {
+            width: 50%;
+            height: 100%;
+            background-color: red;
+            transition: all .7s;
+        }
+        
+        .barin:hover.barin {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bar">
+        <div class="barin"></div>
+    </div>
+</body>
+
+</html>

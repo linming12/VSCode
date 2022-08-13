@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业题1</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        
+        .work1 {
+            width: 100%;
+        }
+        
+        .work1>div {
+            height: 800px;
+            border: red 1px solid;
+        }
+        /*方法1 */
+        
+        .left,
+        .right {
+            width: 200px;
+            margin-top: -802px;
+        }
+        
+        .center {
+            text-indent: 201px;
+            width: 100%;
+        }
+        
+        .left {
+            float: left;
+        }
+        
+        .right {
+            float: right;
+        }
+        /* 方法2
+        .work1>.center {
+            width: 100%;
+            background-color: yellow;
+            height: 100%;
+            position: absolute;
+        }
+        
+        .work1>.left,
+        .work1>.right {
+            height: 100%;
+            background-color: blue;
+            width: 200px;
+            position: absolute;
+        }
+        
+        .work1>.right {
+            right: 0px;
+            top: 0px;
+            background-color: rosybrown;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <h4>作业1</h4>
+    <p>写一个左中右布局占满屏幕，其中左右固定宽为200px,中间自适应宽，要求先加载中间块，请写出对应结构和样式</p> -->
+    <div class="work1">
+        <div class="center">中</div>
+        <div class="left">左</div>
+        <div class="right">右</div>
+    </div>
+
+</body>
+
+</html>

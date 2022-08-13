@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css三角练习</title>
+    <style>
+        .bd {
+            height: 80px;
+            width: 300px;
+            background-color: aqua;
+        }
+        
+        .sj {
+            position: relative;
+            top: 30px;
+            left: 300px;
+            width: 0px;
+            height: 0px;
+            font-size: 0px;
+            border: 10px solid transparent;
+            /* 兼容性 */
+            border-left-color: aqua;
+            line-height: 0px;
+        }
+        
+        .sz {
+            border-top: red 50px solid;
+            border-right: yellow 50px solid;
+            border-bottom: blue 50px solid;
+            border-left: green 50px solid;
+        }
+        
+        .zsj {
+            border-top: transparent 100px solid;
+            border-right: yellow 50px solid;
+            border-bottom: blue 0px solid;
+            border-left: green 0px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <div class="sj"></div>
+        <div class="bd"></div>
+    </div>
+    <div class="sz"></div>
+    <div class="zsj"></div>
+</body>
+
+</html>

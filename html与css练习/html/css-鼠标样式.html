@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标样式</title>
+    <style>
+        .out {
+            /* 取消轮廓线 */
+            outline: none;
+            /* 垂直中线居中 */
+            vertical-align: middle;
+        }
+        
+        textarea {
+            /* 文本域防拖拽 */
+            resize: none;
+        }
+        
+        span {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            /* 单行溢出省略号显示三部曲 */
+            /* 强制一行显示 */
+            /* 隐藏溢出文本 */
+            overflow: hidden;
+            /* 溢出文本显示省略号 */
+            /* text-overflow: ellipsis; */
+            background-color: aqua;
+            word-wrap: break-word;
+        }
+        
+        .dh {
+            word-wrap: break-word;
+            width: 100px;
+            height: 100px;
+            margin: 20px 800px;
+            background-color: pink;
+        }
+        
+        .guoh {
+            width: 100px;
+            background-color: pink;
+            word-wrap: break-word;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 弹性伸缩盒子模型显示 */
+            display: -webkit-box;
+            /* 限制在一个块元素显示的文本的行数 */
+            -webkit-line-clamp: 2;
+            /* 设置或检索伸缩盒对象的子元素的排列方式 */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li style="cursor: text;">文本样式</li>
+        <li style="cursor: not-allowed;">禁用</li>
+        <li style="cursor: default;">小白箭头</li>
+        <li style="cursor: move;">移动</li>
+        <li style="cursor: pointer;">小手</li>
+    </ul>
+    <input class="out" type="text">
+    <textarea class="out" name="" id="" cols="30" rows="10"></textarea>
+    <span class="out">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
+    <div class="dh">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+    <div class="guoh">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+.box {
+    height: 600px;
+}
+
+.box>.hd {
+    margin: 20px 20px 0px 0px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.box>.hd>h3 {
+    float: left;
+}
+
+.box>.hd>a {
+    float: right;
+    color: #a5a5a5;
+    font-size: 14px;
+}
+
+.box>.bd>ul {
+    width: 1360px;
+}
+
+.box>.bd>ul>li {
+    position: relative;
+    float: left;
+    margin: 0px 15px 15px 0px;
+    list-style: none;
+    width: 227px;
+    height: 271px;
+    background-color: #fff;
+}
+
+.box>.bd>ul>li>em>img {
+    position: absolute;
+    top: 4px;
+    right: -4px;
+}
+
+li>img:first-child {
+    width: 100%;
+}
+
+.box>.bd>ul>li>h4 {
+    padding: 15px 24px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.box>.bd>ul>li>p {
+    padding-left: 24px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.box>.bd>ul>li>p>span {
+    color: #ff7c2d;
+}

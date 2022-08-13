@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筛子制作</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        li {
+            float: left;
+            list-style: none;
+        }
+        
+        .box {
+            transform-style: preserve-3d;
+        }
+        
+        .box>div {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+            /* border: #000 1px solid; */
+        }
+        
+        .box>div:nth-child(5) li {
+            margin: 10px 20px;
+        }
+        
+        .box>div:nth-child(5) li:nth-child(3) {
+            margin: 0px 60px;
+        }
+        
+        .box>div:nth-child(1) {
+            padding: 80px 20px;
+            transform: translate3d(400px, 210px, -110px);
+        }
+        
+        .box>div:nth-child(2) {
+            padding: 45px 0px 0px 5px;
+            transform: translate3d(400px, 0, -110px) rotateX(-90deg);
+            transform-origin: bottom;
+        }
+        
+        .box>div:nth-child(3) {
+            padding: 0px 30px 0px;
+            transform: translate3d(610px, 210px, -110px) rotateY(-90deg);
+            transform-origin: left;
+        }
+        
+        .box>div:nth-child(4) {
+            padding: 20px 0px 0px 10px;
+            transform: translate3d(400px, 420px, -110px) rotateX(90deg);
+            transform-origin: top;
+        }
+        
+        .box>div:nth-child(5) {
+            transform-origin: right;
+            transform: translate3d(190px, 210px, -110px) rotateY(90deg);
+        }
+        
+        .box>div:nth-child(6) {
+            transform: translate3d(400px, 210px, 100px);
+        }
+        
+        .box li {
+            float: left;
+            margin: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #000;
+        }
+        /* @keyframes sz {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            25% {
+                transform: rotateX(90deg) rotateY(90deg);
+            }
+            50% {
+                transform: rotateX(180deg) rotateY(180deg);
+            }
+            75% {
+                transform: rotateX(270deg) rotateY(270deg);
+            }
+            100% {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        } */
+        
+        @keyframes mm {
+            from {}
+            to {
+                transform: rotateX(-270deg) rotateY(270deg);
+            }
+        }
+        
+        body {
+            transform-style: preserve-3d;
+        }
+        
+        .box {
+            margin-left: 700px;
+            margin-top: 700px;
+            background-color: aqua;
+            animation: mm 10s linear infinite;
+            width: 210px;
+            height: 210px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top1">
+            <ul>
+                <li class="dian"></li>
+            </ul>
+        </div>
+        <div class="top2">
+            <ul>
+                <li class="dian"></li>
+                <li class="dian"></li>
+            </ul>
+        </div>
+        <div class="top3">
+            <ul>
+                <li class="dian"></li>
+                <li class="dian"></li>
+                <li class="dian"></li>
+            </ul>
+        </div>
+        <div class="top4">
+            <ul>
+                <li class="dian"></li>
+                <li class="dian"></li>
+                <li class="dian"></li>
+                <li class="dian"></li>
+            </ul>
+        </div>
+        <div class="top5">
+            <ul>
+                <li class="dian"></li>
+                <li class="dian"></li>
+                <li class="dian"></li>
+                <li class="dian"></li>
+                <li class="dian"></li>
+            </ul>
+        </div>
+        <div class="top6">
+            <ul>
+                <li class="dian"></li>
+                <li class="dian"></li>
+                <li class="dian"></li>
+                <li class="dian"></li>
+                <li class="dian"></li>
+                <li class="dian"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

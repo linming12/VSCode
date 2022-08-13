@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        
+        .xm {
+            width: 1228px;
+            margin: auto;
+        }
+        
+        .dh {
+            float: left;
+        }
+        
+        .tp {
+            background-color: rgba(163, 155, 151, .8);
+            width: 230px;
+            height: 460px;
+            float: left;
+        }
+        
+        .tp a {
+            display: block;
+            padding: 10px 30px;
+            color: #fff;
+        }
+        
+        .tp a:hover {
+            color: orange;
+            background-color: black;
+        }
+        /*  */
+        
+        div {
+            border: solid red 1px;
+        }
+        
+        .f {
+            margin: auto;
+            width: 1400px;
+            height: 600px;
+            background-color: pink;
+        }
+        
+        .left {
+            float: left;
+            width: 300px;
+            height: 600px;
+            background-color: blueviolet;
+        }
+        
+        .right>div {
+            float: left;
+            width: calc();
+            height: 280px;
+            margin: 18px 0px 0px 20px;
+            background-color: yellow;
+            box-sizing: content-box;
+        }
+        /* after伪元素清除法 */
+        
+        .right:after {
+            display: block;
+            content: "";
+            clear: both;
+            height: 0px;
+            /* 隐藏元素而不更改布局 */
+            visibility: hidden;
+        }
+        
+        .right {
+            /* 兼容IE6、7 */
+            *zoom: 1;
+        }
+        /* 父级清除子浮动影响 */
+        
+        .right {
+            /* 清除浮动影响 */
+            overflow: hidden;
+        }
+        /* 额外标签法 */
+        /* .clear {*/
+        /* 清除浮动影响 */
+        /*clear: both;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="xm">
+        <div class="tp">
+            <a href="#">手机</a>
+            <a href="#">电视</a>
+            <a href="#">笔记本 </a>
+            <a href="#">出行 穿戴</a>
+            <a href="#">耳机 音箱</a>
+            <a href="#">家电</a>
+            <a href="#">智能 路</a>
+            <a href="#">电源 配件</a>
+            <a href="#">健康 儿童</a>
+            <a href="#">生活 箱包</a>
+        </div>
+        <div class="dh">
+            <img src="../imgs/Snipaste_2022-06-07_19-41-57.png" alt="背景图片">
+        </div>
+    </div>
+    <div class="f">
+        <div class="left"></div>
+        <div class="right">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>

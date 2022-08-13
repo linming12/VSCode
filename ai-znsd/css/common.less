@@ -1,0 +1,38 @@
+// 初始化所有元素的部分属性
+html{
+    font-size: 15px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: #333;
+    box-sizing: border-box;
+}
+// 清除链接下滑线
+a{
+    color: #444;
+    text-decoration: none;
+}
+// 清除图片空白间隙
+
+img {
+    // border 增强兼容性
+    border: 0px;
+    vertical-align: bottom;
+}
+// 清除列表小圆点
+ul{
+    list-style: none;
+}
+// 清除浮动
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: "";
+    height: 0px;
+}
+
+.clearfix {
+    *zoom: 1;
+}

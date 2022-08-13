@@ -1,0 +1,49 @@
+/* 清除内外边距 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 清除链接下滑线，并默认为黑色 */
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* 清除列表符号 */
+
+li {
+    list-style: none;
+}
+
+
+/* 清除图片空白间隙 */
+
+img {
+    /* border 增强兼容性 */
+    border: 0px;
+    vertical-align: bottom;
+}
+
+
+/* 隐藏 */
+
+.none {
+    display: none;
+}
+
+
+/* 清除浮动 */
+
+.after {
+    display: block;
+    content: "";
+    clear: both;
+    height: 0px;
+    /* 隐藏元素而不更改布局 */
+    visibility: hidden;
+}

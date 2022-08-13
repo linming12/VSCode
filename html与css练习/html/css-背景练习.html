@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航栏练习</title>
+    <style>
+        #czpt {
+            width: 118px;
+            height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+            /* background-image: url("../imgs/title_sprite.png"); */
+            /* background-repeat: no-repeat; */
+            /* background-position: left center; */
+            /* 混合写法：颜色，图片，平铺，滚动，定位 */
+            background: #fff url("../imgs/title_sprite.png") no-repeat left center;
+            text-indent: 2.2em;
+        }
+        
+        #wcdh>a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            background-color: pink;
+            width: 120px;
+            height: 58px;
+            text-align: center;
+            line-height: 58px;
+        }
+        
+        #wcdh>.bg1:hover {
+            background-color: red;
+        }
+        
+        #wcdh>.bg2:hover {
+            background-color: yellow;
+        }
+        
+        #wcdh>.bg3:hover {
+            background-color: blue;
+        }
+        
+        #wcdh>.bg4:hover {
+            background-color: green;
+        }
+        
+        #wcdh>.bg5:hover {
+            background-color: greenyellow;
+        }
+        
+        div {
+            border-style: double;
+            border-radius: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="czpt">成长守护平台</div>
+    <div id="wcdh">
+        <a href="#" class="bg1">五彩导航</a>
+        <a href="#" class="bg2">五彩导航</a>
+        <a href="#" class="bg3">五彩导航</a>
+        <a href="#" class="bg4">五彩导航</a>
+        <a href="#" class="bg5">五彩导航</a>
+    </div>
+</body>
+
+</html>

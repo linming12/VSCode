@@ -1,0 +1,30 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #F3F5F7
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 设定版心 */
+
+.bx {
+    margin: 0px auto;
+    width: 1200px;
+}
+
+
+/*相对定位练习 */
+
+
+/* .xf {
+    position: relative;
+    left: 191px;
+    top: -145px;
+} */

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态数据表格练习</title>
+</head>
+<table id="stu_list" border="1px"></table>
+
+<body>
+    <script>
+        //模拟学生数据
+        var db = [{ id: '1', name: '张三', age: 18 }, { id: '1', name: '张三', age: 18 }, { id: '1', name: '张三', age: 18 }];
+        var stuList = document.getElementById("stu_list");
+        //创建行
+        for (let i = 0; i < db.length; i++) {
+            var ctr = document.createElement("tr");
+            stuList.appendChild(ctr);
+            for (var key in db[i]) {
+                var ctd = document.createElement("td");
+                ctr.appendChild(ctd);
+                ctd.innerHTML = db[i][key];
+            }
+            var dtd = document.createElement("td");
+            dtd.innerHTML = '<a href=javascript:;>删除</a>';
+            ctr.appendChild(dtd);
+        }
+        //给删除绑定事件
+        var da = document.querySelectorAll("a");
+        for (let i = 0; i < da.length; i++) {
+            da[i].onclick = () => {
+                var this_tr = da[i].parentNode.parentNode;
+                stuList.removeChild(this_tr);
+            }
+        }
+    </script>
+</body>
+
+</html>

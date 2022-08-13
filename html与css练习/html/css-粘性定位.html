@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粘性定位练习</title>
+    <style>
+        body {
+            height: 10000px;
+        }
+        
+        .f {
+            /* 粘性定位 */
+            position: sticky;
+            top: 5px;
+            margin: auto;
+            width: 800px;
+            background-color: yellow;
+        }
+        
+        .son {
+            /* 绝对定位 */
+            position: absolute;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="f">父盒子
+        <div class="son">子盒子</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+html {
+  font-size: 15px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  box-sizing: border-box;
+}
+a {
+  color: #444;
+  text-decoration: none;
+}
+img {
+  border: 0px;
+  vertical-align: bottom;
+}
+ul {
+  list-style: none;
+}
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: "";
+  height: 0px;
+}
+.clearfix {
+  *zoom: 1;
+}

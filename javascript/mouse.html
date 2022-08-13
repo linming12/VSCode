@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标事件与键盘事件</title>
+    <link rel="stylesheet" href="../icomoon/style.css">
+    <style>
+        .img-move {
+            position: absolute;
+        }
+
+        .img-big {
+            position: relative;
+            border: 1px red solid;
+            width: 200px;
+            height: 200px;
+            background: url(../shoping/images/floor-1-3.png) no-repeat;
+            background-size: 100%;
+        }
+
+        .mask_layer {
+            display: none;
+            position: sticky;
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 0, 0, .3);
+        }
+
+        .img-biged {
+            display: none;
+            position: relative;
+            margin-top: 20px;
+            border: 1px red solid;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .img-biged img {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+        }
+
+        .text {
+            display: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 图片移动 -->
+    <!-- <div class="img-move icon-image"></div> -->
+
+    <!-- <div class="img-big">
+        <div class="mask_layer"></div>
+    </div>
+    <div class="img-biged"><img src="../shoping/images/floor-1-3.png" alt=""></div> -->
+
+    <!-- 键盘输入得到焦点 -->
+    <!-- <input id="input_1" type="text"> -->
+
+    <!-- 输入再上面显示内容 -->
+    <div class="text">123</div>
+    <input class="input_text" type="text">
+</body>
+<script>
+    /* //图片跟随鼠标移动案例
+    var img = document.querySelector(".img-move");
+    document.addEventListener('mousemove', (e) => {
+        img.style.top = e.clientY + 'px';
+        img.style.left = e.clientX + 'px';
+        img.style.transform = 'translate(-40%,-40%)';
+    }); */
+
+    /* // 图片浏览放大效果
+    var mask_layer = document.querySelector('.mask_layer');
+    var img_big = document.querySelector('.img-big');
+    var img_biged = document.querySelector('.img-biged');
+    var img = img_biged.querySelector('img');
+    //鼠标移上去时
+    img_big.addEventListener('mousemove', (e) => {
+        img_biged.style.display = 'block';
+        mask_layer.style.display = 'block';
+        mask_layer.style.top = e.clientY + 'px';
+        mask_layer.style.left = e.clientX + 'px';
+        img.style.left = -e.clientX + 'px';
+        img.style.top = -(e.clientY * 2) + 'px';
+    }, true);
+    //鼠标移开时
+    img_big.addEventListener('mouseleave', () => {
+        mask_layer.style.display = 'none';
+        img_biged.style.display = 'none';
+    }) */
+
+    // //键入指定按键聚焦到输入框
+    // var in_1 = document.querySelector('#input_1');
+    // document.addEventListener('keyup', (e) => {
+    //     if (e.keyCode === 83) {
+    //         in_1.focus();
+    //     }
+    // });
+
+    //将输入内容放大显示
+    var text = document.querySelector('.text');
+    var input_text = document.querySelector('.input_text');
+    document.addEventListener('keyup', () => {
+        text.style.display = 'block';
+        text.innerHTML = input_text.value;
+    });
+</script>
+
+</html>

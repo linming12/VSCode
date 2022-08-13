@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="http-equiv" content="re url:www.qq.com">
+    <title>input新类型</title>
+
+</head>
+
+<body>
+    <form action="">
+        <input type="text" autocapitalize="no" name="qwewq">
+        <input type="file" autofocus multiple>
+        <input type="submit">
+    </form>
+    <form action="">
+
+        <ul>
+            <!-- 弹出数字键盘 -->
+            <li>电话：<input type="tel" required placeholder="提示字符" autofocus></li>
+            <!-- 选择时间框 -->
+            <li>时间：<input type="time"></li>
+            <!-- 选择颜色框 -->
+            <li>颜色：<input type="color"></li>
+            <!-- 只能输入数字 -->
+            <li>数字：<input type="number"></li>
+            <!-- 选择日期框 -->
+            <li>日期：<input type="date"></li>
+            <!-- 搜索框 -->
+            <li>搜索：<input type="search"></li>
+            <!-- 地址框 -->
+            <li>地址：<input type="url"></li>
+            <!-- 邮箱框 -->
+            <li>邮箱：<input type="
+                "></li>
+            <li><input type="submit"></li>
+        </ul>
+    </form>
+</body>
+<script>
+    // 冒泡排序
+    var num = [1, 2, 5, 6, 3, 2]
+    for (var i = 0; i < num.length; i++) {//趟数
+        for (var j = 0; j < num.length - i; j++) {//交换的次数
+            //比较两个值，判断是否进行交换
+            if (num[j] > num[j + 1]) {
+                emp = num[j];
+                num[j] = num[j + 1];
+                num[j + 1] = emp;
+            }
+        }
+    }
+    console.log(num);
+</script>
+
+</html>

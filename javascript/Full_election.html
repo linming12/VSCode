@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全选与反选</title>
+    <style>
+        th {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <table cellspacing="0" cellspadding="0">
+        <tr>
+            <th><input type="checkbox" name="" id=""></th>
+            <th>name</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="" id="qu"></td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="" id="qu"></td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="" id="qu"></td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <script>
+        var table = document.querySelector("table");
+        var isall = table.querySelector("th").querySelector("input");
+        var all = table.querySelectorAll("#qu");
+        //全选与反选
+        isall.onclick = function () {
+            if (isall.checked) {
+                for (let i = 0; i < all.length; i++) {
+                    all[i].checked = true;
+                }
+            } else {
+                for (let i = 0; i < all.length; i++) {
+                    all[i].checked = false;
+                }
+            }
+        }
+        //当复选框全为true时,全选框为true;当有false时全选框为false
+        for (let i = 0; i < all.length; i++) {
+            all[i].onclick = () => {
+                let flag = true;
+                for (let j = 0; j < all.length; j++) {
+                    if (!all[j].checked) {
+                        flag = false;
+                    }
+                }
+                isall.checked = flag;
+            }
+        }
+    </script>
+</body>
+
+</html>

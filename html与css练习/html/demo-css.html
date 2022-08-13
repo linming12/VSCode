@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/demo.css">
+    <style>
+        .aaa li {
+            color: red;
+        }
+        
+        a {
+            /* 去下划线 */
+            text-decoration: none;
+        }
+        /* 点击前 */
+        
+        a:link {
+            color: black;
+        }
+        /*点击后*/
+        
+        a:visited {
+            color: yellow;
+        }
+        /*悬浮时*/
+        
+        a:hover {
+            color: red;
+        }
+        /*点击时*/
+        
+        a:active {
+            color: blue;
+        }
+        /* 得到焦点时 */
+        
+        input:focus {
+            border: solid red;
+        }
+        
+        p {
+            width: 100px;
+            height: 400px;
+            background-color: aqua;
+            /* 行内元素 */
+            display: inline;
+            /* 块元素 */
+            display: block;
+            /* 行内块元素 */
+            display: inline-block;
+        }
+    </style>
+</head>
+<div></div>
+<div></div>
+
+<body>
+    <div><input type="text"><input type="text"><input type="text"></div>
+    <div>
+        <p>
+            <a href="#">百度</a>
+        </p>
+        <ul class="aaa">
+            <p>
+                <ul class="bbb">
+                    <li>12</li>
+                    <li>12</li>
+                </ul>
+            </p>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+</body>
+
+</html>

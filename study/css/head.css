@@ -1,0 +1,62 @@
+.head form {
+    float: left;
+    margin-right: 20px;
+}
+
+.head>.dh>ul>li>a {
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.head>.dh {
+    float: left;
+    margin: 0px 70px;
+}
+
+.head>.dh>ul>li {
+    margin: 10px 20px;
+    float: left;
+    list-style: none;
+}
+
+.head>.dh>ul>li>a:hover {
+    display: inline-block;
+    border-bottom: 2px #00b8fb solid;
+    color: #00b8fb;
+}
+
+.head>.user {
+    text-align: center;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.head>.logo {
+    float: left;
+    width: 200px;
+    height: 42;
+}
+
+.head>form>input {
+    float: left;
+    padding: 0px 20px;
+    border: #00b8fb 1px solid;
+    border-right: none;
+    width: 380px;
+    height: 40px;
+}
+
+.head>form>button {
+    float: left;
+    height: 42px;
+    width: 50px;
+    border: none;
+    background-color: #00b8fb;
+}
+
+.head {
+    margin: 26px auto;
+    height: 50px;
+}

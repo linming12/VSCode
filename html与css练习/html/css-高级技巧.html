@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css技巧练习</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .div {
+            margin: 20px;
+        }
+        
+        .demo1 ul>li {
+            margin-left: -1px;
+            float: left;
+            list-style: none;
+            border: 1px solid yellow;
+            width: 100px;
+            height: 200px;
+        }
+        
+        .demo1 ul>li:hover {
+            position: relative;
+            z-index: 2;
+            border-color: red;
+        }
+        /* 双为元素清除法： */
+        
+        .demo1 ul:before,
+        .demo1 ul:after {
+            content: " ";
+            display: table;
+        }
+        
+        .demo1 ul:after {
+            clear: both
+        }
+        
+        .demo2 {
+            text-align: center;
+        }
+        
+        .demo2 a {
+            display: inline-block;
+            width: 45px;
+            height: 36px;
+            border: 1px solid black;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            line-height: 36px;
+            background-color: #ccc;
+        }
+        
+        .demo2 .pre,
+        .demo2 .next {
+            width: 80px;
+        }
+        
+        .demo2 input {
+            height: 36px;
+            width: 50px;
+            outline: none;
+        }
+        
+        .demo2 button {
+            height: 36px;
+            width: 50px;
+            cursor: pointer;
+        }
+        
+        .demo3 {
+            border: 2px solid red;
+            width: 180px;
+            height: 36px;
+        }
+        
+        .demo3 .msj {
+            position: relative;
+            padding: 0px 10px 0px 20px;
+            float: left;
+            height: 36px;
+            background-color: red;
+            line-height: 36px;
+            font-size: 18px;
+            font-weight: bolder;
+            color: #fff;
+        }
+        
+        .demo3 .zgj {
+            padding-right: 30px;
+            float: right;
+            height: 36px;
+            line-height: 40px;
+            text-decoration: line-through;
+            font-size: 13px;
+            color: rgb(114, 112, 112);
+        }
+        
+        .demo3 .msj>i {
+            position: absolute;
+            right: -13px;
+            border-width: 36px 13px 0px 0px;
+            border-color: red transparent transparent transparent;
+            border-style: solid;
+            /* bo */
+        }
+    </style>
+</head>
+
+<body>
+    <video src="">
+        
+    </video>
+    <!-- 外边距负值 -->
+    <div class="demo1 div">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- 行内块 -->
+    <div class="demo2 div">
+        <a href="#" class="pre">&lt;&lt;上一页</a>
+        <a href="#" class="dqy">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#" class="slh">7</a>
+        <a href="#" class="next">&gt;&gt;下一页</a> 到第
+        <input type=""> 页
+        <button>确定</button>
+    </div>
+    <!-- 三角 -->
+    <div class="demo3 div">
+        <span class="msj">￥1650 <i></i></span>
+        <span class="zgj">￥5650</span>
+    </div>
+</body>
+
+</html>

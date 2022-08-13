@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>防抖与节流</title>
+</head>
+
+<body>
+    <button class="but01">回城</button>
+    <button class="but02">开火</button>
+    <script>
+        window.onload = () => {
+            //防抖的概念：倒计时未结束，则点击无效并重新计时
+            const but01 = document.querySelector('.but01');
+            let shake = null;
+            but01.onclick = () => {
+                    clearTimeout(shake);
+                    console.log('点击');
+                    shake = setTimeout(() => {
+                        console.log("按钮1");
+                    }, 3000);
+                }
+                //节流的概念：倒计时未结束，则点击无效
+            const but02 = document.querySelector('.but02');
+            let throttle = null; //创建节流阀
+            but02.onclick = () => {
+                if (!throttle) { //节流阀为true则关闭
+                    throttle = setTimeout(() => { //进入倒计时，就关闭阀门
+                        console.log("按钮2");
+                        throttle = null; //打开阀门
+                    }, 5000);
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

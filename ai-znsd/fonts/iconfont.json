@@ -1,0 +1,114 @@
+{
+  "id": "3487237",
+  "name": "ai-znsd",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6884483",
+      "name": "向右",
+      "font_class": "xiangyou",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "705688",
+      "name": "书签",
+      "font_class": "shuqian",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "1200053",
+      "name": "师资队伍1",
+      "font_class": "shiziduiwu1",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "1448499",
+      "name": "课程查看",
+      "font_class": "kechengchakan",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "13624510",
+      "name": "博士",
+      "font_class": "boshi",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "18229569",
+      "name": "博士帽",
+      "font_class": "boshimao",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "1472567",
+      "name": "通讯录",
+      "font_class": "tongxunlu",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "1876354",
+      "name": "我的企业",
+      "font_class": "wodeqiye",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "6129341",
+      "name": "293汽车",
+      "font_class": "qiche",
+      "unicode": "e7ef",
+      "unicode_decimal": 59375
+    },
+    {
+      "icon_id": "12769423",
+      "name": "DVLINK_网上银行",
+      "font_class": "DVLINK_wangshangyinhang",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "18170164",
+      "name": "齿轮组,设置,设定",
+      "font_class": "gearmore-full",
+      "unicode": "e978",
+      "unicode_decimal": 59768
+    },
+    {
+      "icon_id": "18667154",
+      "name": "书城",
+      "font_class": "shucheng",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "1898963",
+      "name": "qq",
+      "font_class": "qq",
+      "unicode": "e6fd",
+      "unicode_decimal": 59133
+    },
+    {
+      "icon_id": "6940825",
+      "name": "上-箭头",
+      "font_class": "shang-jiantou",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "6940841",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    }
+  ]
+}
